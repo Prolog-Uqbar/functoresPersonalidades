@@ -13,9 +13,7 @@ También conocemos la fecha actual.
 
 Queremos averiguar:
 
-* Cuánto tiempo paso desde la muerte de una personalidad
-  - Cantidad entera de años, redondeando.
-  - La cantidad exacta de días.
+* Cuánto anios pasaron desde la muerte de una personalidad
 
 * Qué persona murió antes que otra. 
   - Contemplando sólo el año.
@@ -47,6 +45,6 @@ es aclamado si realiza una accion que conmueve a mucha gente (más de 10000)
 * los goles en el mundial, 10 veces la cantidad de habitantes del correpondiente pais y 2 veces si es en otra competencia.
 * En las medidas de gobierno se conmueve a los beneficiarios de la medida. 
 
-
+* Una accion es antigua si pasaron mas de 1000000 dias desde que se realizó
 
 
