@@ -16,13 +16,14 @@ todosLosPrimerosDeMesHayAniversarios...
 
 ### Segunda parte
 
+```
 realiza(jesusDeNazareth,milagro(convertirAguaEnVino),fecha(1,1,30)).
 realiza(jesusDeNazareth,milagro(caminarSobreElAgua),fecha(2,8,31)).
 realiza(diego,gol(inglaterra,mundial),fecha(22,6,1986)).
-realiza(lio,gol(polonia,mundial)),fecha(21,11,1986)).
+realiza(lio,gol(polonia,mundial)),fecha(21,11,2022)).
 realiza(juanDomingo,medida(nacionalizar,ferrocarril, 10000),fecha(1,3,1948)).
 realiza(juanDomingo,medida(creacion,universidadObrera, 4000),fecha(19,8,1948)).
-
+```
 
 si hace milagros se considera divino
 
