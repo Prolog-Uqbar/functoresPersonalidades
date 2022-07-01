@@ -70,8 +70,9 @@ todosLosTalDiaDeMesHayAniversarios(Dia):-
     esUnDia(Dia),
     forall(esUnMes(Mes), murio(_,fecha(Dia,Mes,_))).
 
-realiza(jesusDeNazareth,milagro(convertirAguaEnVino),fecha(1,1,30)).
-realiza(jesusDeNazareth,milagro(caminarSobreElAgua),fecha(2,8,31)).
+realiza(jesusDeNazareth,milagro(convertirAguaEnVino),circa(30)).
+realiza(jesusDeNazareth,milagro(caminarSobreElAgua),circa(31)).
+realiza(moises,milagro(cruzarElMarRojo),siglo(-10)).
 realiza(diego,gol(inglaterra,mundial),fecha(22,6,1986)).
 realiza(lio,gol(polonia,mundial),fecha(21,11,2022)).
 realiza(dimaria,gol(uruguay,eliminatoria),fecha(21,11,2021)).
@@ -95,7 +96,6 @@ esNYP(Alguien):-
 
 esNYP(Alguien):-
     realiza(Alguien,medida(nacionalizar,_,_),_).
-
 
 esAclamado2(Alguien):-
     realiza(Alguien, Accion,_),
@@ -135,4 +135,20 @@ esAclamado(Alguien):-
 esAclamado(Alguien):-
     realiza(Alguien,medida(_,_,Beneficiarios),_),
     Beneficiarios > 10000.
+
+
+esAntigua(Accion):-
+    realiza(_,Accion,Cuando),
+    fechaActual(FechaActual),
+    dias(FechaActual,Cuando, Dias),
+    Dias > 100000.
+
+dias(fecha(_,_,AA),fecha(_,_,A), Dias):-
+    Dias is (AA - A) * 365. %aprox
+
+dias(fecha(DA,MA,AA),circa(A), Dias):-
+    Dias is (AA - A) * 365 + MA * 30 + DA. %aprox
+
+dias(fecha(_,_,AA),siglo(S), Dias):-
+    Dias is (AA - (S*100)) * 365. %Aprox
 
