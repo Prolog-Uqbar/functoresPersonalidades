@@ -1,4 +1,25 @@
-murio(juanDomingo, primeroDeJulio1974).
-murio(jesusDeNazareth,viernesSanto33).
-murio(diego,enPandemia).
-murio(yabran,??).
+murio(juanDomingo, fecha(1, 7, 1974)).
+murio(jesusDeNazareth, fecha(3, 3, 33)).
+murio(diego,fecha(25,11,2020)).
+murio(donJulio,fecha(3,12,2020)).
+%murio(yabran,??).
+%
+fechaActual(fecha(1,7,2022)).
+
+tiempoDesdeSuMuerte(Persona,Tiempo):-
+    murio(Persona,FechaDefuncion),
+    fechaActual(FechaActual),
+    anio(FechaDefuncion,AnioDefuncion),
+    anio(FechaActual,AnioActual),
+    Tiempo is AnioActual - AnioDefuncion.
+
+aniversariosEnAgosto(Alguien):-
+    murio(Alguien,fecha(_,8,_)).
+
+murioAntes(Fulano,Mengano):-
+    murio(Fulano,F1),
+    murio(Mengano,F2),
+    esAntes(F1,F2).
+
+
+todosLosPrimerosDeMesHayAniversarios...
