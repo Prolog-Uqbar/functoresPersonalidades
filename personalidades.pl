@@ -13,7 +13,6 @@ tiempoDesdeSuMuerte(Persona,Tiempo):-
     anio(FechaActual,AnioActual),
     Tiempo is AnioActual - AnioDefuncion.
 
-
 anio(fecha(_,_,A),A ).
 
 aniversariosEnAgosto(Alguien):-
@@ -31,3 +30,8 @@ esAntes(F1,F2):-
 
 
 todosLosPrimerosDeMesHayAniversarios...
+todosLos "tal dia" DeMesHayAniversarios...
+
+quien hace mas tiempo que se murió?
+
+
