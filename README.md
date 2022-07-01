@@ -3,16 +3,29 @@
 **Ejemplo de clase con functores y polimorfismo**
 
 ### Primera parte
-Queremos averiguar cuanto tiempo paso desde la muerte de una personalidad.
 
-tiempoDesdeSuMuerte(Persona,Tiempo).
+Tenemos información de cuándo murieron diferentes personalidades
 
-diasSin(Persona,Dias).
+```
+murio(Persona,Fecha).
+```
+También conocemos la fecha actual.
 
-aniversariosEnAgosto(Alguien).
+Queremos averiguar:
 
-todosLosPrimerosDeMesHayAniversarios...
+* Cuánto tiempo paso desde la muerte de una personalidad
+  - Cantidad entera de años, redondeando.
+  - La cantidad exacta de días.
 
+* Qué persona murió antes que otra. 
+  - Contemplando sólo el año.
+  - Contemplando fecha exacta.
+
+* De qué personalidades su aniversario es en Agosto. 
+
+* Si es cierto que todos los primero de mes hay algún aniversario. (Variante: para un día en particular del mes)
+
+* De todas las personas que se conocen ¿Quién hace mas tiempo que se murió?
 
 ### Segunda parte
 

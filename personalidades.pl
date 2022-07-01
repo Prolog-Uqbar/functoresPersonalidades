@@ -29,9 +29,5 @@ esAntes(F1,F2):-
     A1 < A2.
 
 
-todosLosPrimerosDeMesHayAniversarios...
-todosLos "tal dia" DeMesHayAniversarios...
-
-quien hace mas tiempo que se murió?
 
 
